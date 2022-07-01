@@ -18,13 +18,18 @@ export default function Footer() {
       <from className="flex justify-center">
         <input
           type="text"
-          className="rounded text-pink-500 p-3 border-1 border-pink-500"
+          className="  rounded text-pink-300 p-3   border-4 border-pink-300"
           placeholder="Enter Your Email"
         />
-        <button className="p-3 px-5 bg-pink-300  rounded ">
+        <button className="p-3 px-5 bg-pink-300  rounded text-white ">
           <AiOutlineMail></AiOutlineMail>
         </button>
+       
       </from>
+      <div className="container mx-auto">
+
+        <div><hr className="my-5" /></div>
+      </div>
     </div>
   );
 }
