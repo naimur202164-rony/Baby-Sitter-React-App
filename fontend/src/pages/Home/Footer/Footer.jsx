@@ -7,24 +7,29 @@ export default function Footer() {
       <div className="w-full h-full flex justify-center py-2.5 ">
         <img src={logo} alt="logo" />
       </div>
-      <ul className="flex  justify-center my-2 ">
-        <li className="py-3 px-2.5 hover:text-pink-600">About US</li>
-        <li className="py-3 px-2.5 hover:text-pink-600">CONTACT US</li>
-        <li className="py-3 px-2.5   hover:text-pink-600">CLASSES</li>
-        <li className="py-3 px-2.5  hover:text-pink-600">TEACHER</li>
-        <li className="py-3 px-2.5 hover:text-pink-600  ">BLOG</li>
-        <li className="py-3 px-2.5 hover:text-pink-600">SHOP</li>
+      <ul className="  flex justify-center lg:flex-row  flex-col items-center my-2  ">
+        <li className="py-3 px-2.5 hover:text-nav-pink">About US</li>
+        <li className="py-3 px-2.5 hover:text-nav-pink">CONTACT US</li>
+        <li className="py-3 px-2.5  hover:text-nav-pink">CLASSES</li>
+        <li className="py-3 px-2.5  hover:text-nav-pink">TEACHER</li>
+        <li className="py-3 px-2.5 hover:text-nav-pink ">BLOG</li>
+        <li className="py-3 px-2.5 hover:text-nav-pink">SHOP</li>
       </ul>
-      <from className="flex justify-center">
-        <input
+    <from className="flex justify-center">
+       <input
           type="text"
-          className="rounded text-pink-500 p-3 border-1 border-pink-500"
+          className="  rounded text-nav-pink p-3   border-4 border-nav-pink"
           placeholder="Enter Your Email"
         />
-        <button className="p-3 px-5 bg-pink-300  rounded ">
+        <button className="p-3 px-5 bg-nav-pink  rounded text-white ">
           <AiOutlineMail></AiOutlineMail>
         </button>
       </from>
+      <div className="container mx-auto">
+        <div>
+          <hr className="my-5" />
+        </div>
+      </div>
     </div>
   );
 }
