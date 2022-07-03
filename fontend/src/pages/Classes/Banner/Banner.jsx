@@ -10,6 +10,15 @@ export default function Banner() {
             <p className="font-mono">Home - Teacher</p>
           </div>
         </div>
+        <div className='container mx-auto'>
+          <div className='flex justify-center p-3'>
+            <div className='bg-nav-pink p-2 font-semibold text-white rounded'>All Class</div>
+            <div className='bg-blue p-2 font-semibold text-white rounded'>Play GROUP</div>
+            <div className='bg-blue p-2 font-semibold text-white rounded'>PRIMARY</div>
+            <div className='bg-blue p-2 font-semibold text-white rounded'>Story</div>
+            
+          </div>
+        </div>
     </div>
   )
 }

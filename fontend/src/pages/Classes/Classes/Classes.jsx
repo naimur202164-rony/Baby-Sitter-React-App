@@ -5,9 +5,9 @@ import Header from "../../Home/Header/Header";
 export default function Classes() {
   return (
     <div>
-        <Header/>
+      <Header />
       <Banner />
-      <Footer/>
+      <Footer />
     </div>
   );
 }
