@@ -16,13 +16,13 @@ export default function Activites() {
         <div className="flex-1">
           <div className="h-auto max-w-full ">
             <img className="rounded" src={video} alt="" />
-            <div></div>
+           
           </div>
-          <div></div>
+         
         </div>
         <div className="  lg:w-96 w-full pl-2 ">
-          <div className="border-2">
-            <div className="pl-1 h-auto max-w-full">
+          <div className=" ">
+            <div className="pl-1 h-auto max-w-full ">
               <img src={flag} alt="" />
             </div>
             <div className="text-center font-bold text-3xl">
@@ -32,7 +32,7 @@ export default function Activites() {
                 Your Child to
                 <br /> A Class?
               </h2>
-              <div className="h-auto max-w-full flex justify-center"><img src={dancling} alt=""/> </div>
+              <div className="h-auto max-w-full flex justify-center "><img src={dancling} alt=""/> </div>
             </div>
           </div>
         </div>
