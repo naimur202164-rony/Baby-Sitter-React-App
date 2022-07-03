@@ -1,0 +1,64 @@
+
+  .skill-container ul li h2 {
+    text-decoration: none;
+    font-weight: bold;
+  
+    text-transform: uppercase;
+    position: relative;
+  }
+  .skill {
+    background-color: #cbd5e1;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    display: block;
+    height: 20px;
+    border-radius: 10px;
+    width: 90%;
+    overflow: hidden;
+    transition: all, 0.3s, cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+  .skill span {
+    height: 20px;
+    float: left;
+  }
+  .html {
+    width: 82%;
+    animation: html 3s;
+    background: #F6B851;
+  }
+  .css {
+    width: 90%;
+    animation: css 3s;
+    background: #95ADFA;
+  }
+  .js {
+    width: 100%;
+    animation: js 3s;
+    background: #63E3D6;
+  }
+ 
+  @keyframes html {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 80%;
+    }
+  }
+  @keyframes css {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 90%;
+    }
+  }
+  
+  @keyframes js {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 75%;
+    }
+  }
+ 
