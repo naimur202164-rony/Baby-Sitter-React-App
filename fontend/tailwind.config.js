@@ -11,6 +11,8 @@ module.exports = {
       input: "#ffffff26",
       social: "#7dd0f8",
     },
+    
+    
   },
   plugins: [],
 };
