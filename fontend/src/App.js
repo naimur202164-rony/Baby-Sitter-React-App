@@ -6,11 +6,10 @@ import "aos/dist/aos.css";
 function App() {
   AOS.init();
   return (
-    <div >
+    <div>
       <Routes>
-        <Route path="/" element={<Home/>}/>
+        <Route path="/" element={<Home />} />
       </Routes>
-   
     </div>
   );
 }
