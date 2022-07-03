@@ -16,6 +16,8 @@ module.exports = {
       progess3: "#63E3D6",
       partner: "#f7f7f7",
     },
+    
+    
   },
   plugins: [],
 };
