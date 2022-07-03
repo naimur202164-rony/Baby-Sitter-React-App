@@ -10,6 +10,11 @@ module.exports = {
       white: "#fff",
       input: "#ffffff26",
       social: "#7dd0f8",
+      progresscolor: "#666666",
+      progess1: "#F6B851",
+      progess2: "#95ADFA",
+      progess3: "#63E3D6",
+      partner: "#f7f7f7",
     },
     
     

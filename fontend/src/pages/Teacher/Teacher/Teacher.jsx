@@ -36,6 +36,13 @@ export default function Teacher() {
             ))}
           </div>
         </div>
+        {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihil voluptatibus fugiat, voluptatem aut consequuntur sed voluptatum est facilis magni placeat dolorum enim, quibusdam minima. Corrupti totam non quia ad? */}
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+          vitae eum ducimus nostrum iusto explicabo et, voluptas libero minima
+          saepe! Voluptatem, magnam? Alias eum earum neque quos sequi facere
+          minima.
+        </div>
       </div>
       <ContactChild />
     </div>

@@ -13,7 +13,7 @@ export default function Home() {
       <Wellcome />
       <ClassRoom />
       <Activites />
-      <OurBlog/>
+      <OurBlog />
       <Footer />
     </div>
   );
