@@ -15,8 +15,7 @@ export default function Banner() {
             <div className='bg-nav-pink p-2 font-semibold text-white rounded'>All Class</div>
             <div className='bg-blue p-2 font-semibold text-white rounded'>Play GROUP</div>
             <div className='bg-blue p-2 font-semibold text-white rounded'>PRIMARY</div>
-            <div className='bg-blue p-2 font-semibold text-white rounded'>Story</div>
-            
+            <div className='bg-blue p-2 font-semibold text-white rounded'>Story</div>            
           </div>
         </div>
     </div>

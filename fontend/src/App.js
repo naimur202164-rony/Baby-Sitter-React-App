@@ -1,13 +1,13 @@
 import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home/Home/Home";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Classes from "./pages/Classes/Classes/Classes";
 function App() {
   AOS.init();
   return (
     <div >
       <Routes>
-        <Route path="/" element={<Classes/>}/>
+        <Route path="/" element={<Home/>}/>
       </Routes>
    
     </div>
