@@ -1,8 +1,9 @@
 import Home from "./pages/Home/Home/Home";
-import { Routes, Route } from "react-router-dom";
-import Teacher from "./pages/Teacher/Teacher/Teacher";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+  AOS.init();
   return (
     <div>
       <Home />

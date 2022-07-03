@@ -1,4 +1,5 @@
 import React from "react";
+import Teacher from "../../Teacher/Teacher/Teacher";
 import Activites from "../Activities/Activites";
 import ClassRoom from "../ClassRoom/ClassRoom";
 import Footer from "../Footer/Footer";
@@ -12,6 +13,7 @@ export default function Home() {
       <Wellcome />
       <ClassRoom />
       <Activites />
+      {/* <Teacher /> */}
       <Footer />
     </div>
   );
