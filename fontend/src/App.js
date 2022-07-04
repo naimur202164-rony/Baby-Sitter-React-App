@@ -2,8 +2,8 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home/Home";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import MainTeacher from "./pages/Teacher/MainTeacher";
 import MainAbout from "./pages/AboutUs/MainAbout";
+import MainTeacher from "./pages/Teacher/MainTeacher";
 import MainContact from "./pages/ContactUs/MainContact";
 
 function App() {
