@@ -61,7 +61,7 @@ export default function Header() {
             <li className="header-navbar_item has-sub">
               <a className="inline-block py-6 px-2.5" href="/login">
                 <span className="hover:text-amber hover:bg-nav-pink p-1   rounded">
-                    LOGIN
+                  LOGIN
                 </span>
               </a>
             </li>

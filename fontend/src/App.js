@@ -1,14 +1,12 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home/Home";
-import Teacher from "./pages/Teacher/Teacher/Teacher";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import MainTeacher from "./pages/Teacher/MainTeacher";
 import MainAbout from "./pages/AboutUs/MainAbout";
+import MainTeacher from "./pages/Teacher/MainTeacher";
 import MainContact from "./pages/ContactUs/MainContact";
-import About from "./pages/About/About";
 import Classes from "./pages/Classes/Classes/Classes";
-import Blog from './pages/Blogs/Blog/Blog'
+import Blog from "./pages/Blogs/Blog/Blog";
 import Login from "./pages/Login/Login";
 function App() {
   AOS.init();
@@ -22,8 +20,6 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<MainContact />} />
-        <Route path="/teacher" element={<Teacher />} />
-        <Route path="/about" element={<About />} />
       </Routes>
     </div>
   );
