@@ -31,7 +31,7 @@ export default function Header() {
               </a>
             </li>
             <li className="header-navbar_item has-sub">
-              <a className="inline-block py-6 px-2.5" href="#/home">
+              <a className="inline-block py-6 px-2.5" href="/class">
                 <span className="hover:text-amber hover:bg-nav-pink p-1 rounded">
                   CLASSES
                 </span>
@@ -45,7 +45,7 @@ export default function Header() {
               </a>
             </li>
             <li className="header-navbar_item has-sub">
-              <a className="inline-block py-6 px-2.5" href="#/home">
+              <a className="inline-block py-6 px-2.5" href="/blog">
                 <span className="hover:text-amber hover:bg-nav-pink p-1 rounded">
                   BLOG
                 </span>
@@ -55,6 +55,13 @@ export default function Header() {
               <a className="inline-block py-6 px-2.5" href="/contact">
                 <span className="hover:text-amber hover:bg-nav-pink p-1   rounded">
                   CONTACT US
+                </span>
+              </a>
+            </li>
+            <li className="header-navbar_item has-sub">
+              <a className="inline-block py-6 px-2.5" href="/login">
+                <span className="hover:text-amber hover:bg-nav-pink p-1   rounded">
+                  LOGIN
                 </span>
               </a>
             </li>
