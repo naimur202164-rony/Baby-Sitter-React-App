@@ -9,8 +9,24 @@ exports.createTeacher = async (req, res, next) => {
   });
 };
 
+//Get All teachers
 
+exports.getALlTeacher = async (req, res, next) => {
+  const teacher = await Teacher.find();
+  res.status(200).json({
+    success: true,
+    teacher,
+  });
+};
 
+exports.getTeacherDetails = async (req, res, next) => {
+  const teacher = await Teacher.findById(req.params.id);
+
+  res.status(200).json({
+    success: true,
+    teacher,
+  });
+};
 
 // get babys prodcts
 exports.getAllbabys = async (req, res) => {
