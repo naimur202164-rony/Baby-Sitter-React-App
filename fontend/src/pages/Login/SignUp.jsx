@@ -1,54 +1,81 @@
-import React, { useEffect } from "react";
+import React from "react";
 import {
-  useSignInWithEmailAndPassword,
+  useCreateUserWithEmailAndPassword,
   useSignInWithGoogle,
+  useUpdateProfile,
 } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
 import { useForm } from "react-hook-form";
-import { Link, useNavigate, useLocation } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import useToken from "../../hooks/useToken";
 
-export default function Login() {
+const SignUp = () => {
   const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
   const {
     register,
     formState: { errors },
     handleSubmit,
   } = useForm();
-  const [signInWithEmailAndPassword, user, loading, error] =
-    useSignInWithEmailAndPassword(auth);
+  const [createUserWithEmailAndPassword, user, loading, error] =
+    useCreateUserWithEmailAndPassword(auth);
+
+  const [updateProfile, updating, updateError] = useUpdateProfile(auth);
 
   const [token] = useToken(user || gUser);
 
-  let signInError;
   const navigate = useNavigate();
-  const location = useLocation();
-  let from = location.state?.from?.pathname || "/";
 
-  useEffect(() => {
-    if (token) {
-      navigate(from, { replace: true });
-    }
-  }, [token, from, navigate]);
+  let signInError;
 
-  if (error || gError) {
+  if (error || gError || updateError) {
     signInError = (
       <p className="text-red-500">
-        <small>{error?.message || gError?.message}</small>
+        <small>
+          {error?.message || gError?.message || updateError?.message}
+        </small>
       </p>
     );
   }
 
-  const onSubmit = (data) => {
-    signInWithEmailAndPassword(data.email, data.password);
-  };
+  if (token) {
+    navigate("/appointment");
+  }
 
+  const onSubmit = async (data) => {
+    await createUserWithEmailAndPassword(data.email, data.password);
+    await updateProfile({ displayName: data.name });
+    console.log("update done");
+  };
   return (
     <div className="flex h-screen justify-center items-center">
-      <div className="card w-96 bg-base-500 shadow-xl">
+      <div className="card w-96 bg-base-100 shadow-xl">
         <div className="card-body px-12 py-12">
-          <h2 className="text-center text-2xl font-bold">Login</h2>
+          <h2 className="text-center text-2xl font-bold">Sign Up</h2>
           <form onSubmit={handleSubmit(onSubmit)}>
+            <div className="form-control w-full max-w-xs">
+              <label className="label">
+                <span className="label-text">Name</span>
+              </label>
+              <input
+                type="text"
+                placeholder="Your Name"
+                className="input input-bordered w-full max-w-xs"
+                {...register("name", {
+                  required: {
+                    value: true,
+                    message: "Name is Required",
+                  },
+                })}
+              />
+              <label className="label">
+                {errors.name?.type === "required" && (
+                  <span className="label-text-alt text-red-500">
+                    {errors.name.message}
+                  </span>
+                )}
+              </label>
+            </div>
+
             <div className="form-control w-full max-w-xs">
               <label className="label">
                 <span className="label-text">Email</span>
@@ -118,14 +145,14 @@ export default function Login() {
             <input
               className="btn w-full max-w-xs text-white"
               type="submit"
-              value="Login"
+              value="Sign Up"
             />
           </form>
           <p>
             <small>
-              New to Baby Sitter Member{" "}
-              <Link className="text-primary" to="/signup">
-                Create New Account
+              Already have an account?{" "}
+              <Link className="text-primary" to="/login">
+                Please login
               </Link>
             </small>
           </p>
@@ -140,4 +167,6 @@ export default function Login() {
       </div>
     </div>
   );
-}
+};
+
+export default SignUp;

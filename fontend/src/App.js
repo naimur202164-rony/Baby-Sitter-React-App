@@ -11,6 +11,7 @@ import Login from "./pages/Login/Login";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 import Teacher from "./pages/Teacher/Teacher/Teacher";
+import SignUp from "./pages/Login/SignUp";
 
 function App() {
   AOS.init();
@@ -22,6 +23,7 @@ function App() {
         <Route path="/about" element={<MainAbout />} />
         <Route path="/class" element={<Classes />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<MainContact />} />
         <Route path="/teacher" element={<Teacher />} />
