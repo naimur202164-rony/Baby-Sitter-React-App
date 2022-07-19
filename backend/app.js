@@ -3,11 +3,9 @@ const app = express();
 const connectDatabase=require('./config/dataBase');
 
 // Database Connection
-
 connectDatabase();
 
-// middleware
-
+// middleware//
 app.use(express.json());    
 
 

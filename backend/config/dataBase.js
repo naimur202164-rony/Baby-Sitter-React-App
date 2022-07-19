@@ -4,7 +4,6 @@ const connectDatabase = () => {
   mongoose
     .connect("mongodb://localhost:27017/Baby", {
       useNewUrlParser: true,
-
       useUnifiedTopology: true,
     })
     .then((data) => {
