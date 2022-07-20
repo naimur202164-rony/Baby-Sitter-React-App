@@ -1,24 +1,26 @@
 const mongoose = require("mongoose");
 
-const classesSchema = mongoose.Schema({
+const classSchema = mongoose.Schema({
   name: {
-    type: String || Number,
-    required: [true, "Please Enter Name"],
-    trim: true,
-  },
-  time: {
-    type: String || Number,
-    required: [true, "Please Enter a Time"],
+    type: String,
+    required: [true, "Please Eneter Product"],
   },
   date: {
     type: String || Number,
-    required: true,
+    required: [true, "Please Enter the Date"],
+  },
+  time: {
+    type:String,
+    required: [true, "Please Enter the Age"],
   },
   age: {
     type: Number,
     required: [true, "Please Enter the Age"],
   },
+
+  images: {
+    type: String,
+    required: [true, "Please Enter the image Url"],
+  },
 });
-
-
-module.exports=mongoose.model("Classes",classesSchema);
+module.exports = mongoose.model("Classes", classSchema);
