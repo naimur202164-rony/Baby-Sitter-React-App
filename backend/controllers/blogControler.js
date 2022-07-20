@@ -37,4 +37,3 @@ exports.getAllBlogs = async (req, res, next) => {
   });
 };
 
-module.exports = updateBlogsDetails;
