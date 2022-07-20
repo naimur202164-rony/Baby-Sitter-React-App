@@ -4,7 +4,7 @@ import pic from "../../../assets/teacher/line-blue-small.png";
 export default function Progrss() {
   return (
     <div className="lg:container mx-auto my-40">
-      <div className="grid grid-cols-2 gap-10">
+      <div className="grid lg:grid-cols-2  grid-cols-1 gap-10">
         <div className="pl-10">
           <h1 className="text-5xl text-nav-pink mb-4">Welcome to JOBBY</h1>
           <img src={pic} alt="" />

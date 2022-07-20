@@ -4,7 +4,7 @@ import pic from "../../../assets/teacher/line-blue-small.png";
 export default function Storyus() {
   return (
     <div className="lg:container mx-auto my-20">
-      <div className="grid grid-cols-2 gap-10">
+      <div className="grid lg:grid-cols-2 grid-cols-1 gap-10">
         <div>
           <div className="border-4  border-social relative rounded-lg rel w-4/5  mx-auto ">
             <img
