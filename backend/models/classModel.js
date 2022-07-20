@@ -10,7 +10,7 @@ const classSchema = mongoose.Schema({
     required: [true, "Please Enter the Date"],
   },
   time: {
-    type:String,
+    type: String,
     required: [true, "Please Enter the Age"],
   },
   age: {

@@ -10,8 +10,10 @@ exports.createClasses = async (req, res, next) => {
 };
 
 exports.getAllClasses = async (req, res, next) => {
+  const clsss = await Classes.find();
+
   res.status(200).json({
     success: true,
-    message: "Hello From ther classes",
+    clsss,
   });
 };
