@@ -8,10 +8,13 @@ connectDatabase();
 // middleware//
 app.use(express.json());    
 
-
 // Router imports
 const baby=require('./routes/babyRoutes');
-app.use("/api/v1/",baby);
+const classes=require('./routes/classRoute');
 
+
+
+app.use("/api/v1/",baby);
+app.use("/api/v1/",classes);
 
 module.exports = app;

@@ -8,9 +8,7 @@ exports.createTeacher = async (req, res, next) => {
     teacher,
   });
 };
-
 //Get All teachers
-
 exports.getALlTeacher = async (req, res, next) => {
   const teacher = await Teacher.find();
   res.status(200).json({
@@ -35,3 +33,6 @@ exports.getAllbabys = async (req, res) => {
     message: "server is working fine",
   });
 };
+
+
+// Home Page Class Contents
