@@ -7,10 +7,11 @@ import MainTeacher from "./pages/Teacher/MainTeacher";
 import MainContact from "./pages/ContactUs/MainContact";
 import Classes from "./pages/Classes/Classes/Classes";
 import Blog from "./pages/Blogs/Blog/Blog";
-import Login from "./pages/Login/Login";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 import Teacher from "./pages/Teacher/Teacher/Teacher";
+import MainSignUp from "./pages/Login/LoginCom/MainSignUp";
+import MainLogin from "./pages/Login/LoginCom/MainLogin";
 
 function App() {
   AOS.init();
@@ -21,7 +22,8 @@ function App() {
         <Route path="/teacher" element={<MainTeacher />} />
         <Route path="/about" element={<MainAbout />} />
         <Route path="/class" element={<Classes />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/login" element={<MainLogin />} />
+        <Route path="/signup" element={<MainSignUp />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<MainContact />} />
         <Route path="/teacher" element={<Teacher />} />
