@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import axios from "axios";
 import pic from "../../../assets/teacher/line-blue-small.png";
 import ContactChild from "./ContactChild";
 import Teachers from "./Teachers";
@@ -6,12 +7,9 @@ import Teachers from "./Teachers";
 export default function Teacher() {
   const [teachers, setTeachers] = useState([]);
   useEffect(() => {
-    fetch("teacherJson.json")
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-        setTeachers(data);
-      });
+    axios.get("http://localhost:5000/api/v1/teachers").then((data) => {
+      setTeachers(data.data.teacher);
+    });
   }, []);
   return (
     <div>
@@ -36,13 +34,12 @@ export default function Teacher() {
             ))}
           </div>
         </div>
-        {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihil voluptatibus fugiat, voluptatem aut consequuntur sed voluptatum est facilis magni placeat dolorum enim, quibusdam minima. Corrupti totam non quia ad? */}
-        <div>
+        {/* <div>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
           vitae eum ducimus nostrum iusto explicabo et, voluptas libero minima
           saepe! Voluptatem, magnam? Alias eum earum neque quos sequi facere
           minima.
-        </div>
+        </div> */}
       </div>
       <ContactChild />
     </div>

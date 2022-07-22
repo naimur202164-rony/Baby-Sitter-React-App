@@ -15,9 +15,8 @@ module.exports = {
       progess2: "#95ADFA",
       progess3: "#63E3D6",
       partner: "#f7f7f7",
+      classColor: "#b6dd6b",
     },
-    
-    
   },
   plugins: [],
 };
