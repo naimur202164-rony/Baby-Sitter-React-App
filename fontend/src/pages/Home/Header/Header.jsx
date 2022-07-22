@@ -4,7 +4,7 @@ import "./Header";
 export default function Header() {
   let [open, setOpen] = useState(false);
   return (
-    <div className="shadow-md w-full static top-0 left-0 ">
+    <div className="shadow-md w-full reletive top-0 left-0 z-50 ">
       {/* <div className="header_content flex justify-between items-center"> */}
       {/* <div className="logo">
           <a href="/#">
@@ -15,7 +15,7 @@ export default function Header() {
             />
           </a>
         </div> */}
-      <nav className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7 z-50  ">
+      <nav className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7 z-40  ">
         <div
           className="font-bold  cursor-pointer flex items-center font-[Poppins] 
       text-gray-800"

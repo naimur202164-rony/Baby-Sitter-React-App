@@ -6,7 +6,7 @@ import wellcome3 from "../../../assets/welcome-03.jpg";
 import wellcome4 from "../../../assets/welcome-03.jpg";
 export default function Wellcome() {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto relative z-40">
       <div>
         <h2 className="  text-center text-5xl font-semibold text-nav-pink hover:text-pink-600    ">
           Welcome to JOBBY
